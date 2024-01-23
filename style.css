@@ -16,7 +16,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 100vh;
 }
 
 .container {
@@ -166,11 +165,17 @@ footer {
 
 .developed_text {
     display: flex;
-    gap: 5px;
-    cursor: default;
+    cursor: pointer;
     opacity: 50%;
     margin-bottom: 12px;
     margin-right: 12px;
+}
+
+.github {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    gap: 5px;
 }
 
 .developed_text:hover {
