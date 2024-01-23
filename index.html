@@ -13,16 +13,22 @@
 
     <main>
         <section class="container">
-            <div>
-                <input type="text" class="container__text">
+            <div class="container__area">
+                <div class=container__area-text>
+                    <textarea type="text" class="container__text" placeholder="Digite seu texto"></textarea>
+
+                </div>
+                
+                <div class="container__area-low">
+                    <img src="assets/exclamation logo.svg" alt="" srcset="">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                    <div class="container__buttons">
+                        <button class="container__button">Criptografar</button>
+                        <button class="container__button">Descriptografar</buton>
+                    </div>
+                </div>
             </div>
             
-            <div>
-                <p>Apenas letras minúsculas e sem acento.</p>
-                <button class="container__encryptor">Criptografar</button>
-                <button class="container__decryptor">Descriptografar</buton>
-            </div>
-
             <div>
                 <div class="container__box"></div>
            </div>
@@ -30,7 +36,10 @@
     </main>
 
     <footer> 
-        <div>desenvolvido por Yago Sousa</div>
+        <div>
+            <img src="assets/github logo.svg" alt="">
+            <p>desenvolvido por Yago Sousa</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
