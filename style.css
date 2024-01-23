@@ -5,17 +5,18 @@
     padding: 0;
 
     flex-flow: wrap row;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #151515;
     color: white;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-}
-
-header {
-    height: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 100vh;
 }
 
 .container {
@@ -52,17 +53,11 @@ header {
     font-weight: 400;
 }
 
-.container__area-low {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .container__area-low-image {
     display: flex;
+    align-items: center;
     padding: 10px 10px;
     gap: 5px;
-    align-items: center;
     opacity: 50%;
     cursor: default;
 
@@ -80,10 +75,6 @@ header {
 }
 
 .container__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     width: 300px;
     height: 60px;
 
@@ -138,7 +129,7 @@ header {
 }
 
 .astronaut-image {
-    margin-top: px;
+    margin-top: 20px;
     width: 241.64px;
     height: 241.64px;
 }
@@ -171,16 +162,15 @@ footer {
     display: flex;
     justify-content: end;
     align-items: end;
-    margin-top: 3%;
-    padding: 0 12px;
 }
 
 .developed_text {
     display: flex;
     gap: 5px;
-    cursor: pointer;
-    margin: 10px;
-    opacity: 5 0%;
+    cursor: default;
+    opacity: 50%;
+    margin-bottom: 12px;
+    margin-right: 12px;
 }
 
 .developed_text:hover {
