@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Encryptor</title>
+    <title>Criptografador - Yago Sousa</title>
 </head>
 <body>
     <header>
@@ -20,8 +20,10 @@
                 </div>
                 
                 <div class="container__area-low">
-                    <img src="assets/exclamation logo.svg" alt="" srcset="">
-                    <p>Apenas letras minúsculas e sem acento.</p>
+                    <div class="container__area-low-image">
+                        <img src="assets/exclamation logo.svg" alt="logo-exclamation" class="img-exclamation">
+                        <p>Apenas letras minúsculas e sem acento.</p>
+                    </div>
                     <div class="container__buttons">
                         <button class="container__button">Criptografar</button>
                         <button class="container__button">Descriptografar</buton>
@@ -29,14 +31,22 @@
                 </div>
             </div>
             
-            <div>
-                <div class="container__box"></div>
+            <div class="container__area-box">
+                <div class="container__box">
+                    <img class="astronaut-image" src="assets/astronaut.png" alt="astronaut-image">
+                    <div class="messages">
+                    <p class="message-error">Nenhuma mensagem encontrada</p>
+                    <p class="message-description">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
+                    <button class="button-copy" hidden>Copiar</button>
+                </div>
+                
            </div>
         </section>
     </main>
 
     <footer> 
-        <div>
+        <div class="developed_text">
             <img src="assets/github logo.svg" alt="">
             <p>desenvolvido por Yago Sousa</p>
         </div>
