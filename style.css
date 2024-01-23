@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Roboto:wght@500;700&display=swap');
 
+:root {
+--cor--principal:var(--cor--principal)
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +20,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-decoration: none;
 }
 
 .container {
@@ -46,10 +51,30 @@ body {
     width: 556px;
     height: 459px;
 
+    text-decoration: none;
     font-family: 'Fira Code', monospace;
     color: white;
     font-size: 26px;
     font-weight: 400;
+}
+
+.msg-hidden {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    background-color: #232624;
+    border: #232624;
+    width: 316px;
+    height: 459px;
+
+    resize: none;
+    font-family: 'Fira Code', monospace;
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 100px;
+
+    position: absolute;
+    display: flex;
 }
 
 .container__area-low-image {
@@ -104,6 +129,19 @@ body {
     align-items: center;
 }
 
+.box-hidden {
+    position: absolute;
+    width: 375.625px;
+    height: 601px;
+    background-color: #232624;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.80);   
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 24px;
+}
+
 .messages {
     display: flex;
     align-items: center;
@@ -133,12 +171,12 @@ body {
     height: 241.64px;
 }
 
-.button-copy {
+.copy-hidden {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 300px;
+    width: 310px;
     height: 60px;
 
     border-radius: 6px;
@@ -149,10 +187,9 @@ body {
     font-size: 18px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
-    opacity: 0%;
 }
 
-.button-copy:hover {
+.copy-hidden:hover {
     background-color: #ffffff23;
     cursor: pointer;
 }
