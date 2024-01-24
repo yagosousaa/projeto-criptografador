@@ -7,6 +7,8 @@ let copyHidden = document.querySelector('.copy-hidden');
 let boxHidden = document.querySelector('.box-hidden');
 let msgHidden = document.querySelector('.msg-hidden');
 
+let msgCopy = document.querySelector('.msg_copy');
+
 function replace() {
     let textoCriptografado = textoCampo.value.replace(/e/g,'enter').replace(/i/g,'imes').replace(/a/g,'ai').replace(/o/g,'ober').replace(/u/g,'ufat');
     textoCampo.value='';
@@ -27,12 +29,40 @@ function decrypt(){
 
 function copy() {
     navigator.clipboard.writeText(msgHidden.value);
+    msgCopy.removeAttribute('style');
 }
+
+copyHidden.addEventListener('mouseup',()=> {
+    msgCopy.attributes
+})
 
 // TEMA ESCURO
 
 let caixa_botao = document.querySelector('.caixa_botao');
+let body = document.querySelector('body');
+let containerArea = document.querySelector('.container__area-text');
+let containerText = document.querySelector('.container__text');
+let box = document.querySelector('.box-hidden');
+let messageHidden = document.querySelector('.msg-hidden');
+let copyButtonHidden = document.querySelector('.copy-hidden');
+let containerBox = document.querySelector('.container__box');
+let messageDescription = document.querySelector('.message-description');
+let containerAreaLowImage = document.querySelector('.container__area-low-image');
+let github = document.querySelector('.github_yago');
+let developedText = document.querySelector('.developed_text')
 
 caixa_botao.addEventListener('click', ()=> {
-    caixa_botao.classList.toggle('dark')
+    caixa_botao.classList.toggle('dark');
+    body.classList.toggle('dark');
+    containerArea.classList.toggle('dark');
+    containerText.classList.toggle('dark');
+    box.classList.toggle('dark');
+    messageHidden.classList.toggle('dark');
+    copyButtonHidden.classList.toggle('dark');
+    containerBox.classList.toggle('dark');
+    messageDescription.classList.toggle('dark');
+    containerAreaLowImage.classList.toggle('dark')
+    github.classList.toggle('dark');
+    developedText.classList.toggle('dark');
+    msgCopy.classList.toggle('dark');
 })

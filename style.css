@@ -34,20 +34,9 @@ header {
     border-radius: 50px;
     position: absolute;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     cursor: pointer;
 
-    margin-right: 5px;
-}
-
-.caixa_botao.dark .botao__dark{
-    left: 150px;
-}
-
-.fa-solid.fa-moon{
-    transform: scale(1.5);
+    display: flex;
 }
 
 .botao__dark {
@@ -56,6 +45,77 @@ header {
     transform: scale(0.9);
     background-color: #000000;
     border-radius: 150px;
+    transition: 0.5s;
+    position: relative;
+    left: 0px;
+}
+
+.caixa_botao.dark .botao__dark{
+    background-color: white;
+    transition: 0.5s;
+    left: 35px;
+}
+
+.caixa_botao.dark {
+    transition: 0.5s;
+}
+
+body.dark {
+    background-color: #b4b8c5;
+}
+
+.container__area-text.dark {
+    background-color: #d4d4d4;
+}
+
+.container__text.dark {
+    background-color: #d4d4d4;
+    border: #d4d4d4;
+    color: black;
+}
+
+.msg-hidden.dark {
+    color: black;
+}
+
+.container__area-low-image.dark {
+    opacity: 100%;
+    color: black; 
+}
+
+.developed_text.dark {
+    opacity: 80%; 
+}
+
+.github_yago.dark {
+    color: black;
+}
+
+.copy-hidden.dark {
+    border: solid 2px #05BE4F;
+    color: black;
+}
+
+.copy-hidden.dark:hover {
+    background-color: #8f8f8f;
+}
+
+.box-hidden.dark {
+    background-color: #d4d4d4;
+    box-shadow: none;
+}
+
+.msg-hidden.dark {
+    background-color: #d4d4d4;
+}
+
+.container__box.dark {
+    background-color: #d4d4d4;
+    color: black;
+}
+
+.message-description.dark {
+    color: rgb(49, 49, 49);
 }
 
 .container {
@@ -177,6 +237,30 @@ header {
     padding-bottom: 24px;
 }
 
+.msg_copy {
+    width: 100px;
+    height: 35px;
+    transform: scale(0.7);
+    background-color: rgba(255, 255, 255, 0.315);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'Fira Code', monospace;
+    font-size: 18px;
+    font-weight: 600;
+    
+    position: absolute;
+    margin-bottom: 60px;
+    border-radius: 16px;
+}
+
+.msg_copy.dark {
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.603);
+}
+
 .messages {
     display: flex;
     align-items: center;
@@ -254,12 +338,6 @@ footer {
     opacity: 100%;
 }
 
-<<<<<<< HEAD
-@media (max-width: 1440px) {
-    
-    body {
-        width: 100vw;
-=======
 i {
     padding-right: 10px;
 }
@@ -269,7 +347,6 @@ i {
         transform: scale(0.6);
         margin-top: -15%;
 
->>>>>>> d2307918cf02ebacb137324315adac8b3db6801a
         display: flex;
     }
 
@@ -379,7 +456,6 @@ i {
     .msg-hidden {
         width: 556px;
         height: 400px;
-
         margin-bottom: 50px;
     }
     
