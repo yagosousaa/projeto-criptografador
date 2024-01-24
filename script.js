@@ -29,5 +29,10 @@ function copy() {
     navigator.clipboard.writeText(msgHidden.value);
 }
 
+// TEMA ESCURO
 
+let caixa_botao = document.querySelector('.caixa_botao');
 
+caixa_botao.addEventListener('click', ()=> {
+    caixa_botao.classList.toggle('dark')
+})

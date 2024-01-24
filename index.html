@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Criptografador - Yago Sousa</title>
 </head>
 <body>
     <header>
-
+        <div id="caixa_botao" class="caixa_botao"><div class="botao__dark"></div><i class="fa-solid fa-moon"></i></div>
     </header>
 
     <main>
@@ -25,15 +26,17 @@
                         <p>Apenas letras minúsculas e sem acento.</p>
                     </div>
                     <div class="container__buttons">
-                        <button onclick="replace()" id='criptografar' class="container__button">Criptografar</button>
-                        <button onclick="decrypt()" id="descriptografar" class="container__button">Descriptografar</buton>
+                        
+                        <button onclick="replace()" id='criptografar' class="container__button"><i class="fa-solid fa-lock"></i>Criptografar</button>
+                        
+                        <button onclick="decrypt()" id="descriptografar" class="container__button"><i class="fa-solid fa-lock-open"></i>Descriptografar</buton>
                     </div>
                 </div>
             </div>
             
             <div class="container__area-box">
                 <div class="container__box">
-                    <div style="opacity: 0;" class="box-hidden"><button style="opacity: 0;" onclick="copy()" class="copy-hidden">Copiar</button></div>
+                    <div style="opacity: 0;" class="box-hidden"><button style="opacity: 0;" onclick="copy()" class="copy-hidden"><i class="fa-solid fa-copy"></i>Copiar</button></div>
                     <textarea style="opacity: 0;" class="msg-hidden" placeholder="Nenhuma mensagem..." disabled>Yago</textarea>
                     <img class="astronaut-image" src="assets/astronaut.png" alt="astronaut-image">
                     <div class="messages">

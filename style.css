@@ -19,6 +19,45 @@ body {
     text-decoration: none;
 }
 
+header {
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.caixa_botao {
+    width: 65px;
+    height: 30px;
+    background-color: rgb(87, 87, 87);
+
+    border-radius: 50px;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    margin-right: 5px;
+}
+
+.caixa_botao.dark .botao__dark{
+    left: 150px;
+}
+
+.fa-solid.fa-moon{
+    transform: scale(1.5);
+}
+
+.botao__dark {
+    width: 30px;
+    height: 30px;
+    transform: scale(0.9);
+    background-color: #000000;
+    border-radius: 150px;
+}
+
 .container {
     display: flex;
     justify-content: space-evenly;
@@ -215,10 +254,22 @@ footer {
     opacity: 100%;
 }
 
+<<<<<<< HEAD
 @media (max-width: 1440px) {
     
     body {
         width: 100vw;
+=======
+i {
+    padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        transform: scale(0.6);
+        margin-top: -15%;
+
+>>>>>>> d2307918cf02ebacb137324315adac8b3db6801a
         display: flex;
     }
 
@@ -226,6 +277,11 @@ footer {
         flex-wrap: nowrap;
         width: 100vw;
         gap: 5%;
+    }
+
+    .container {
+        flex-flow: nowrap;
+        gap: 30px;
     }
 
     footer {
@@ -277,7 +333,6 @@ footer {
     }
 
 }
-
 
 @media (max-width: 425px) {
     body {
