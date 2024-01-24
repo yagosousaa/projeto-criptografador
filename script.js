@@ -27,7 +27,6 @@ function decrypt(){
 
 function copy() {
     navigator.clipboard.writeText(msgHidden.value);
-    msgHidden.value=''
 }
 
 
