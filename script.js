@@ -1,6 +1,4 @@
 let textoCampo = document.querySelector('.container__text');
-let msgsCampo = document.querySelector('.messages')
-
 
 let buttonCriptografar = document.querySelector('#criptografar');
 let buttonDescriptografar = document.querySelector('#descriptografar');
@@ -17,5 +15,20 @@ function replace() {
     copyHidden.removeAttribute('style');
     msgHidden.value=textoCriptografado;
 }
+
+function decrypt(){
+    let textoDescriptografado = textoCampo.value.replace(/enter/g,'e').replace(/imes/g,'i').replace(/ai/g,'a').replace(/ober/g,'o').replace(/ufat/g,'u');
+    textoCampo.value='';
+    boxHidden.removeAttribute('style');
+    msgHidden.removeAttribute('style');
+    copyHidden.removeAttribute('style');
+    msgHidden.value=textoDescriptografado;
+}
+
+function copy() {
+    navigator.clipboard.writeText(msgHidden.value);
+    msgHidden.value=''
+}
+
 
 
