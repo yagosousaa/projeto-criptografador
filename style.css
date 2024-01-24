@@ -217,11 +217,16 @@ footer {
 
 @media (max-width: 768px) {
     body {
-        transform: scale(0.5);
+        transform: scale(0.6);
         margin-top: -15%;
 
         display: flex;
         flex-direction: column;
+    }
+
+    .container {
+        flex-flow: nowrap;
+        gap: 30px;
     }
 
     footer {
