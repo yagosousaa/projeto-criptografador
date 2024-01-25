@@ -64,5 +64,8 @@ caixa_botao.addEventListener('click', ()=> {
     containerAreaLowImage.classList.toggle('dark')
     github.classList.toggle('dark');
     developedText.classList.toggle('dark');
+<<<<<<< HEAD
     msgCopy.classList.toggle('dark');
+=======
+>>>>>>> b352c6488cd2d2b6d550ee0436591331134c550a
 })

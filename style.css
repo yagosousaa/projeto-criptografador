@@ -96,10 +96,13 @@ body.dark {
     color: black;
 }
 
+<<<<<<< HEAD
 .copy-hidden.dark:hover {
     background-color: #8f8f8f;
 }
 
+=======
+>>>>>>> b352c6488cd2d2b6d550ee0436591331134c550a
 .box-hidden.dark {
     background-color: #d4d4d4;
     box-shadow: none;
