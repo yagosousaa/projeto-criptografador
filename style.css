@@ -78,6 +78,11 @@ body.dark {
     color: black;
 }
 
+.box-hidden.dark {
+    background-color: #d4d4d4;
+    box-shadow: none;
+}
+
 .container__area-low-image.dark {
     opacity: 100%;
     color: black; 
@@ -236,7 +241,7 @@ body.dark {
     width: 100px;
     height: 35px;
     transform: scale(0.7);
-    background-color: rgba(255, 255, 255, 0.315);
+    background-color: rgb(119, 119, 119);
     color: black;
     display: flex;
     justify-content: center;
@@ -244,7 +249,7 @@ body.dark {
     
     font-family: 'Fira Code', monospace;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 500;
     
     position: fixed;
     margin-bottom: 60px;

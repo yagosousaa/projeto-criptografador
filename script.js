@@ -54,6 +54,7 @@ let messageDescription = document.querySelector('.message-description');
 let containerAreaLowImage = document.querySelector('.container__area-low-image');
 let github = document.querySelector('.github_yago');
 let developedText = document.querySelector('.developed_text')
+let messageCopy = document.querySelector('.msg_copy');
 
 caixa_botao.addEventListener('click', ()=> {
     caixa_botao.classList.toggle('dark');
@@ -68,6 +69,7 @@ caixa_botao.addEventListener('click', ()=> {
     containerAreaLowImage.classList.toggle('dark')
     github.classList.toggle('dark');
     developedText.classList.toggle('dark');
+    messageCopy.classList.toggle('dark');
 })
 
 
