@@ -96,16 +96,8 @@ body.dark {
     color: black;
 }
 
-<<<<<<< HEAD
 .copy-hidden.dark:hover {
     background-color: #8f8f8f;
-}
-
-=======
->>>>>>> b352c6488cd2d2b6d550ee0436591331134c550a
-.box-hidden.dark {
-    background-color: #d4d4d4;
-    box-shadow: none;
 }
 
 .msg-hidden.dark {
@@ -254,9 +246,28 @@ body.dark {
     font-size: 18px;
     font-weight: 600;
     
-    position: absolute;
+    position: fixed;
     margin-bottom: 60px;
     border-radius: 16px;
+
+    opacity: 0;
+}
+
+.msg_copy.animation {
+    animation: 3s appear;
+}
+
+@keyframes appear{
+    0% {
+        opacity: 100;
+    }
+    50% {
+        opacity: 90;
+    }
+    100% {
+        opacity: 0;
+    }
+
 }
 
 .msg_copy.dark {
