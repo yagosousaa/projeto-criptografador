@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Roboto:wght@500;700&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
-
-    flex-flow: wrap row;
     box-sizing: border-box;
 }
 
@@ -12,31 +11,53 @@ body {
     background-color: #151515;
     color: white;
     font-family: 'Roboto', sans-serif;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     text-decoration: none;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    
 }
 
 header {
-    width: 100vw;
-    padding: 10px;
     display: flex;
     justify-content: end;
+    align-items: center;
+    padding: 10px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #464646;
+    border: 100%;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #05BE4F;
+}
+
+.container__area-box {
+    height: 626px;
 }
 
 .caixa_botao {
     width: 65px;
     height: 30px;
     background-color: rgb(87, 87, 87);
-
     border-radius: 50px;
-    position: absolute;
-
     cursor: pointer;
-
-    display: flex;
 }
 
 .botao__dark {
@@ -47,7 +68,7 @@ header {
     border-radius: 150px;
     transition: 0.5s;
     position: relative;
-    left: 0px;
+    left: 0;
 }
 
 .caixa_botao.dark .botao__dark{
@@ -58,6 +79,16 @@ header {
 
 .caixa_botao.dark {
     transition: 0.5s;
+}
+
+#criptografar.dark {
+    color: white;
+    font-weight: 400;
+}
+
+#descriptografar.dark {
+    color: white;
+    font-weight: 400;
 }
 
 body.dark {
@@ -80,7 +111,6 @@ body.dark {
 
 .box-hidden.dark {
     background-color: #d4d4d4;
-    box-shadow: none;
 }
 
 .container__area-low-image.dark {
@@ -121,6 +151,7 @@ body.dark {
 .container {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .container__area-text {
@@ -129,7 +160,6 @@ body.dark {
 
     background-color: #232624;
     border-radius: 10px;
-    box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.80);
  
     display: flex;
     justify-content: center;
@@ -137,7 +167,6 @@ body.dark {
 }
 
 .container__text {
-    box-shadow: 0 0 0 0;
     outline: 0;
     background-color: #232624;
     border: #232624;
@@ -154,19 +183,18 @@ body.dark {
 }
 
 .msg-hidden {
-    box-shadow: 0 0 0 0;
     outline: 0;
     background-color: #232624;
     border: #232624;
     width: 316px;
-    height: 459px;
+    height: 450px;
+    margin-top: 2%;
 
     resize: none;
     font-family: 'Fira Code', monospace;
     color: white;
     font-size: 26px;
     font-weight: 400;
-    margin-bottom: 100px;
 
     position: absolute;
     display: flex;
@@ -213,28 +241,32 @@ body.dark {
 
 .container__box {
     width: 375.625px;
-    height: 601px;
+    height: 626px;
 
     background-color: #232624;
     border-radius: 10px;
-    box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.80);
 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .box-hidden {
     position: absolute;
     width: 375.625px;
-    height: 601px;
+    height: 626px;
     background-color: #232624;
     border-radius: 10px;
-    box-shadow: 0px 0px 30px 3px rgba(0, 0, 0, 0.80);   
     display: flex;
     justify-content: center;
     align-items: end;
-    padding-bottom: 24px;
+}
+
+.messages {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .msg_copy {
@@ -251,7 +283,8 @@ body.dark {
     font-size: 18px;
     font-weight: 500;
     
-    position: fixed;
+    cursor: default;
+    position: absolute;
     margin-bottom: 60px;
     border-radius: 16px;
 
@@ -314,7 +347,7 @@ body.dark {
     justify-content: center;
     align-items: center;
 
-    width: 310px;
+    width: 390px;
     height: 60px;
 
     border-radius: 6px;
@@ -330,12 +363,6 @@ body.dark {
 .copy-hidden:hover {
     background-color: #ffffff23;
     cursor: pointer;
-}
-
-footer {
-    display: flex;
-    justify-content: end;
-    align-items: end;
 }
 
 .developed_text {
@@ -363,48 +390,32 @@ i {
 
 /* SMARTPHONES */
 
-@media (max-width: 768px){
+@media (max-width: 1020px){
     body {
-        width: 100%;
+        width: 100vw;
     }
-
-    header {
-        width: 100%;
-        margin-bottom: 1.5%;
-        margin-top: 1.5%;
-        justify-content: end;
-        align-items: center;
-    }
-
-    footer {
-        width: 100%;
-        margin-top: 3%;
-        margin-bottom: 3%;
-        font-size: 10px;
-        align-items: center;
-        justify-content: end;
-    }
-
-    .caixa_botao {
-        transform: scale(0.8);
-    }
-
-    .container__area {
-        width: 100%;
+    
+    .container {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .container__area-text {
-        width: 90%;
-        height: 300px;
+    .container__area {
+        width: 90%; 
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .container__area-text{
+        width: 95%;
     }
 
     .container__text {
         width: 90%;
-        height: 270px;
-        font-size: 18px;
     }
 
     .container__area-low {
@@ -412,110 +423,71 @@ i {
     }
 
     .container__area-low-image {
-        width: 100%;
-        
-        font-size: 10px;
+        display: flex;
         justify-content: center;
-        align-items: center;
     }
 
     .container__buttons {
-        width: 100%;
         justify-content: space-evenly;
         margin-bottom: 2%;
     }
 
     .container__button {
-        width:45%;
-        height: 40px;
-        font-size: 12px;
+        width: 45%;
     }
-
+    
     .container__area-box {
-        justify-content: center;
-        align-items: start;
-        display: flex;
         width: 100%;
-        height: 1%;
-    }
-
-    .container__box {
-        width: 90%;
-        height: 210px;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        height: 400px;
+        align-items: start;
+        justify-content: center;
+        display: flex;
     }
 
     .box-hidden {
         width: 90%;
-        height: 210px;
+        height: 400px;
+        padding-bottom: 0;
+        
     }
 
     .msg-hidden {
-        width: 85%;
-        height: 120px;
-        margin-bottom: 60px;
-        font-size: 18px;
+        width: 80%;
+        height: 300px;
     }
 
-    .copy-hidden {
-        width: 80%;
-        height: 40px;
-        font-size: 12px;
+    .container__box {
+        width: 90%;
+        height: 400px;
+        justify-content: space-between;
+    }
+
+    .astronaut-image {
+        margin-top: 0;
     }
 
     .messages {
-        gap: 5px;
-        flex-direction: column;
-    }   
-
-    .message-error {
-        font-size: 14px;
-    }
-    
-    .message-description {
-        font-size: 10px;
+        margin-bottom: 10%;
     }
 
-    .msg_copy {
-        top: 250px;
-    }
-
-    .astronaut-image {
-        width: 40%;
-        margin-top: 40%;
+    .copy-hidden{
+        width: 100%;
     }
 
     .developed_text {
+        margin-top: 2px;
+        width: 100vw;
         justify-content: center;
         align-items: center;
-        margin-bottom: 0;
-        margin-right: 5%;
     }
 
-}
-
-@media (max-width: 425px){
-    .astronaut-image {
-        width: 30%;
-        margin-top: 40%;
+    footer {
+        margin-top: 1%;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
     }
 }
-
-@media (max-width: 375px){
-    .astronaut-image {
-        width: 40%;
-        margin-top: 50%;
-    }
-}
-
-@media (max-width: 320px){
-    .astronaut-image {
-        width: 50%;
-        margin-top: 60%;
-    }
-}
-
 
 
 
