@@ -37,7 +37,7 @@
 
 ### Link do Projeto
 
-🚀 https://yagosousaa.github.io/projeto-criptografador
+🚀 https://yagosousaa.github.io/sprint1-projeto-decodificador
 
 ### 👨‍💻 Tecnologias
 
