@@ -1,3 +1,7 @@
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
 <h1 align="center">Challenge ONE Sprint 01 - 2024</h1>
 
 <div align="center" style="display: flex; align-items: center; justify-content: center;">
@@ -8,6 +12,18 @@
 <p>
     O objetivo desse Challenge era desenvolver um criptografador de textos em Javascript, que pudesse tanto criptografar como descriptografar o texto original.
 </p>
+
+## Estilo Proposto pelo Projeto
+
+<p align="center">
+    <img src="./assets/estilo proposto.png" width="600px">
+  </p>
+
+## Meu Estilo
+
+<p align="center">
+    <img src="./assets/meu estilo.png" width="800px">
+  </p>
 
 ### Descrição do Desafio
 
